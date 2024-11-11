@@ -23,8 +23,8 @@ def selectionSortSmallToFront(A):
     compareCount = 0
     swapCount = 0
     for i in range(len(A)-1):
-        print(f"Elements have ben compared {compareCount} times.")
-        print(f"Elements have ben swapped {swapCount} times.")
+        print(f"Elements have been compared {compareCount} times.")
+        print(f"Elements have been swapped {swapCount} times.")
         print(f"Current status of the array: {A}")
         minIndex = i
         for j in range(i + 1, len(A)):

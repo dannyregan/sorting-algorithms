@@ -4,8 +4,8 @@ def bubbleSort(A):
     swapCount = 1
     compareCount = 0
     for i in range(len(A) - 1):
-        print(f"Elements have ben compared {compareCount} times.")
-        print(f"Elements have ben swapped {swapCount - 1} times.")
+        print(f"Elements have been compared {compareCount} times.")
+        print(f"Elements have been swapped {swapCount - 1} times.")
         print(f"Current array: {A}")
         # If the following returns false, the array is sorted.
         if prevSwapCount != swapCount:
@@ -24,6 +24,6 @@ def bubbleSort(A):
 A4 = [44, 63, 77, 17, 20, 99, 84, 6, 39, 52]
 A5 = [52, 84, 6, 39, 20, 77, 17, 99, 44, 63]
 A6 = [6, 17, 20, 39, 44, 52, 63, 77, 84, 99]
-# print(bubbleSort(A4))
-# print(bubbleSort(A5))
+print(bubbleSort(A4))
+print(bubbleSort(A5))
 print(bubbleSort(A6))
