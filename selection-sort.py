@@ -1,3 +1,4 @@
+# This brings the largest number to the end of the list each iteration. Once an element is placed at the end, the end moves forward one position.
 def selectionSort(A):
     compareCount = 0
     swapCount = 0
