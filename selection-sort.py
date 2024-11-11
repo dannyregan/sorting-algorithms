@@ -2,13 +2,16 @@
 def selectionSort(A):
     compareCount = 0
     swapCount = 0
+    # i begins in the last index and moves towards the first index.
     for i in range(-1, -(len(A) - 1), -1):
         print(f"Elements have ben compared {compareCount} times.")
         print(f"Elements have ben swapped {swapCount} times.")
         print(f"Current array: {A}")
         maxIndex = i
+        # j begins in the next-to-last index and moves towards the first index.
         for j in range((i - 1), -(len(A) + 1), -1):
             compareCount += 1
+            # If the value at j is bigger than that at maxIndex, j becomes the new maxIndex.
             if A[j] > A[maxIndex]:
                 swapCount += 1
                 maxIndex = j

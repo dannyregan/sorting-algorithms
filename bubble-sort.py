@@ -1,3 +1,4 @@
+# Compares neighboring elements and swaps them if their not in ascending order. When the array is sorted, the program returns the array.
 def bubbleSort(A):
     prevSwapCount = 0
     swapCount = 1
@@ -6,10 +7,13 @@ def bubbleSort(A):
         print(f"Elements have ben compared {compareCount} times.")
         print(f"Elements have ben swapped {swapCount - 1} times.")
         print(f"Current array: {A}")
+        # If the following returns false, the array is sorted.
         if prevSwapCount != swapCount:
             prevSwapCount = swapCount
+            # Compare neighboring elements.
             for j in range(len(A) - i - 1):
                 compareCount += 1
+                # If they're not in ascending order, swap them.
                 if (A[j] > A[j + 1]):
                     swapCount += 1
                     A[j], A[j + 1] = A[j + 1], A[j]
